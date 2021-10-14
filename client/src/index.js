@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
-axios.defaults.baseURL = "http://localhost:3000/api/";
+axios.defaults.baseURL = "http://localhost:5000/api/";
 axios.defaults.headers.common["x-access-token"] = localStorage.getItem("access-token")
 
 ReactDOM.render(
