@@ -1,0 +1,31 @@
+.row a, .row Button {
+    border-radius: 25px;
+    width: 85%;
+    height: 40px;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+    background: rgb(157, 103, 243);
+    background: linear-gradient(90deg, rgb(157, 103, 243) 0%, rgb(91, 207, 253) 100%);
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-out;
+}
+
+.row a, .row .logout-btn {
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+    background: rgb(157, 103, 243);
+    background: linear-gradient(90deg, rgb(241, 56, 80) 0%, rgb(253, 91, 140) 100%);
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-out;
+}
+
+.row h2{
+    float: inline-start;
+}
