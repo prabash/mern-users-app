@@ -71,6 +71,9 @@ export default class Menu extends Component {
   }
 
   render() {
+    if (!localStorage.getItem("authorized")){
+      return <Redirect to="/login" />;
+    }
     if (localStorage.getItem("authorized") == 'false') {
       console.log("redirecting...")
       return <Redirect to="/login" />;
@@ -87,7 +90,7 @@ export default class Menu extends Component {
           </Router>
         );
       }
-      else {
+      else if (localStorage.getItem("user_type") == "user") {
         return (
           <Router>
             <Route path="/" component={() => <UserHome />} />
